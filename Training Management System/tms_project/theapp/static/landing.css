@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(234, 234, 234);  
+    font-family: "Poppins", sans-serif;
+}
+
+#top-navigation-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: #fffbeb;
+    box-shadow: black 0px 10px 20px -15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+#top-navigation-bar a:hover{
+    color: #e59b2b;
+}
+
+#mof-logo-left{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#nav-toggle-center{
+    list-style: none;
+}
+
+#nav-toggle-center a{
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding-left: 20px;
+}
+
+#nav-toggle-right{
+    list-style: none;
+    position: absolute;
+    right: 0;
+}
+
+#nav-toggle-right a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding-right: 20px;
+}
+
+#nav-toggle-right a:nth-child(3):hover{
+    color: black;
+    cursor: default;
+}
+
+#tms-intro{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(234, 234, 234);
+    height: 70vh;
+    justify-content: space-around;
+}
+
+#intro-text-paragraph{
+    width: 50%;
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#system-description{
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#trainingImg{
+    width: 700px;
+    height: 500px;
+    filter: grayscale(1);
+}
+
+#mof-intro{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(234, 234, 234);
+    height: 70vh;
+    justify-content: space-around;
+
+}
+
+#mof-intro-paragraph {
+    width: 50%;
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#mof-description {
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#mof-logo-body{
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+#ifmis-intro {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(234, 234, 234);
+    height: 70vh;
+    justify-content: space-around;
+
+}
+
+#ifmis-intro-paragraph {
+    width: 50%;
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#ifmis-description {
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+#oncloud {
+    height: 500px;
+    width: 500px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    filter: grayscale(1);
+}
+
+#get-support{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 200;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+footer {
+    font-weight: 200;
+    margin-top: 110px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    font-size: small;
+
+}
+
+footer p:nth-child(2) {
+    font-size: large;
+}
+
+footer p:nth-child(3) {
+    color: rgb(67, 35, 16);
+    font-weight: 400;
+    padding: 0 10px 0 10px;
+    float: right;
+}

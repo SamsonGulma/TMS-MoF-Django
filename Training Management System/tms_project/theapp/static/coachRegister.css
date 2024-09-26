@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(234, 234, 234);
+    font-family: "Poppins", sans-serif;
+}
+
+#registration-panel {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+}
+
+#header {
+    align-self: center;
+    margin-left: 25vh;
+    margin-right: 0;
+    width: 700px;
+    align-content: center;
+    text-align: center;
+}
+
+#welcome-text {
+    font-weight: 200;
+    font-size: xxx-large;
+}
+
+#MoF-ethiopia {
+    font-size: larger;
+    font-weight: 200;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#registration-intro {
+    text-align: left;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
+}
+
+#trainers-only {
+    padding-bottom: 30px;
+    color: red;
+}
+
+
+form {
+    background-color: white;
+    height: 80vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-top: 30px;
+    margin-left: 30px;
+    border-image: linear-gradient(to right, #3f4d80 0%, #d5d23a 25%, #fff458 70%, #3a4ed5 100%) 1;
+    border-style: solid;
+    border-bottom-right-radius: 100%;
+}
+
+
+form input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 17px;
+    float: left;
+    margin-left: 100px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #d5d23a 0%, #3a4ed5 100%) 1;
+}
+
+
+form input::placeholder {
+    font-size: 17px;
+}
+
+form input:active {
+    border-style: solid;
+    border-image: linear-gradient(to right, #3a4ed5 0%, #d5d23a 100%) 1;
+}
+
+form button {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    float: left;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #d5d23a;
+    margin-left: 100px;
+    margin-top: 30px;
+
+}
+
+form button:hover {
+    color: black;
+    transition-duration: .5s;
+    background-color: #fffbeb;
+    border-style: solid;
+    border-color: #d5d23a;
+
+}
+
+form button img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+form button p {
+    float: right;
+    font-size: medium;
+}
+
+
+#first-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#password-section {
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+}
+
+#password-section #passwordInput1 {
+    margin-right: 0px;
+    border-right-style: dotted;
+    border-right-width: 1pt;
+    border-right-color: gray;
+}
+
+#password-section #passwordInput2 {
+    margin-left: 0px;
+    border-left-style: dotted;
+    border-left-width: 1pt;
+    border-left-color: gray;
+}
+
+#pos-dep {
+    display: flex;
+    flex-direction: row;
+    width: 70px;
+}
+
+#pos-dep #your-training-area {
+    margin-right: 0px;
+    border-right-style: dotted;
+    border-right-width: 1pt;
+    border-right-color: gray;
+}
+
+#pos-dep #your-specialization {
+    margin-left: 0px;
+    border-left-style: dotted;
+    border-left-width: 1pt;
+    border-left-color: gray;
+}
+
+.horizontal {
+    border: none;
+    width: 500px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#am-trainee {
+    font-weight: bold;
+    color: #3a4ed5;
+    text-decoration: none;
+    text-decoration: underline;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#login-coach {
+    font-weight: bold;
+    color: #3a4ed5;
+    text-decoration: none;
+    text-decoration: underline;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    font-weight: 200;
+    margin-top: 120px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    font-size: small;
+
+}
+
+footer p:nth-child(2) {
+    font-size: large;
+}
+
+footer p:nth-child(3) {
+    color: rgb(67, 35, 16);
+    font-weight: 400;
+    padding: 0 10px 0 10px;
+    float: right;
+}

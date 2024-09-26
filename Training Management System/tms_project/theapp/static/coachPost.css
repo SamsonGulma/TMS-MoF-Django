@@ -1,0 +1,119 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: rgb(234, 234, 234);
+    font-family: "Poppins", sans-serif;
+}
+
+
+#top-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background-color: #fffbeb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#MoF-logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+}
+
+#top-nav-center {
+    font-size: xxx-large;
+    font-weight: 200;
+    font-style: normal;
+    position: absolute;
+    color: black;
+    left: 40%;
+}
+
+#right-panel {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+
+#post-heading{
+    font-size: larger;
+    font-weight: 300;
+    padding-top: 30px;
+    text-align: center;
+    color: black;
+}
+
+form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form input{
+    padding-left: 10px;
+    width: 50ch;
+    height: 40px;
+    margin: 10px;
+    font-size: medium;
+    font-weight: 200;
+    align-items: center;
+}
+
+form button{
+    width: 50ch;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    float: left;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: #fffbeb;
+    margin-top: 30px;
+    text-align: left;
+}
+
+form button:hover{
+    border-style: solid;
+    border-color: rgb(98, 98, 98);
+    transition-duration: .5s;
+}
+
+footer {
+    font-weight: 200;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    font-size: small;
+    margin-top: 100px;
+}
+
+footer p:nth-child(2) {
+    font-size: large;
+}
+
+footer p:nth-child(3) {
+    color: rgb(67, 35, 16);
+    font-weight: 400;
+    padding: 0 10px 0 10px;
+    float: right;
+}

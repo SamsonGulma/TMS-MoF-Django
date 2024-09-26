@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            {% load static %}
+
+    <link rel="stylesheet" href="{% static 'coachPost.css' %}">
+    <script src="{% static 'coachPost.js' %}" defer></script>
+    <title>MoF-TMS :Training Post</title>
+</head>
+<body>
+    <div id="top-navbar">
+        {% load static %}
+        <div>
+            <img id="MoF-logo" src="{% static '/images/MoF-logo.jpg' %}" alt="">
+        </div>
+    
+        <div id="top-nav-center">
+            <p> MoF Ethiopia TMS </p>
+        </div>
+    
+        <div id="right-panel">
+            {% load static %}
+            <img id="profile-pic" src=" {% static 'images/user-1.png' %}" alt="">
+        </div>
+
+    </div>
+
+
+    <p id="post-heading">Post your trainings from here! Your trainings are valuable</p>
+
+    <form action="{% url 'coachpost' %}" method="POST">
+        {% csrf_token %}
+        <input type="text" id="title" name="title" placeholder="Title">
+        <input type="text" id="description" name="description" placeholder="Description">
+        <input type="text" id="department" name="department" placeholder="Department">
+        <input type="url" id="video" name="video" placeholder="Video Tutorial URL">
+        <input type="url" id="document" name="document" placeholder="Document URL">
+        <div>
+            <p id="thumbnail">Choose an Image for thumbnail</p><input type="file" id="image" name="image">
+        </div>
+        
+        <div>
+            <p id="estimated-time">Give an estimated time to finish the training</p><input type="number" id="time_estimation" name="estimated_time">
+        </div>
+        <button type="submit">
+            <p> POST </p>
+            <img src="{% static 'images/enter-1.png' %}" alt="">
+        </button>
+    </form>
+    
+
+    <footer>
+        <p>copyright </p>
+        <p> &copy;</p>
+        <p> iRON GLEN </p>
+        <p>Allright reserved. 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,291 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'traineeHome.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    {% load static %}
+    <script src="{% static 'traineeHome.js' %}" defer></script>
+    <title>Abebe|MoF-TMS</title>
+</head>
+<body>
+
+
+    <div id="top-navbar">
+        {% load static %}
+        <div>
+            <img id="MoF-logo" src="{% static '/images/MoF-logo.jpg' %}" alt="">
+        </div>
+
+        <div id="top-nav-center">
+                <p> MoF Ethiopia TMS </p>
+        </div>
+
+        <div id="right-panel">
+            {% load static %}
+                <img id="profile-pic" src=" {% static 'images/user-1.png' %}" alt="">
+        </div>
+    </div>
+        <dialog class="modal" id="modal">
+            <h4>{{ allcontent.title }}</h4>
+            <h5>From {{ allcontent.department }} Department</h5>
+            <p>{{ allcontent.description }}</p>
+            <h5 id="closeit">Last Modified Date: {{ allcontent.date }}</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam blanditiis architecto, veniam aliquid, fuga eos
+            quaerat perferendis Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, optio minus! Quibusdam quaerat
+            unde ipsa exercitationem numquam possimus suscipit sint, hic eligendi harum? Nam iure exercitationem cupiditate nisi
+            natus maxime. voluptate maiores error eius a fugit dicta! Aut non itaque quia deleniti quisquam.
+        </dialog>
+       
+
+    <header>
+
+        {% load static %}
+        <div id="filter-icon">
+            <img src="{% static '/images/filter-1.png' %}" alt="">
+            <p>Filter</p>
+        </div>
+
+        <div id="filtering-categories">
+            <button id="department-btn">
+                <p> Department </p>
+                <img id="department-down-arrow" src="{% static '/images/down-arrow-1.png' %}" alt="">
+                <img id="department-up-arrow" src="{% static '/images/up-arrow-1.png' %}" alt="">
+
+            </button>
+
+            <button id="coaches-btn">
+                <p> Coaches </p>
+                <img id="coaches-down-arrow" src="{% static '/images/down-arrow-1.png' %}" alt="">
+                <img id="coaches-up-arrow" src="{% static '/images/up-arrow-1.png' %}" alt="">
+
+            </button>
+
+            <button id="general-trainings-btn">
+                <p> General Trainings </p>
+                <img id="general-training-down-arrow" src="{% static '/images/down-arrow-1.png' %}" alt="">
+                <img id="general-training-up-arrow" src="{% static '/images/up-arrow-1.png' %}" alt="">
+
+            </button>
+
+            <button id="technology-btn">
+                <p> Technology and Systems Trainings </p>
+                <img id="tech-down-arrow" src="{% static '/images/down-arrow-1.png' %}" alt="">
+                <img id="tech-up-arrow" src="{% static '/images/up-arrow-1.png' %}" alt="">
+            
+            </button>
+
+            <button id="strategic-btn">
+                <p> Strategic Planning Trainings </p>
+                <img id="strat-down-arrow" src="{% static '/images/down-arrow-1.png' %}" alt="">
+                <img id="strat-up-arrow" src="{% static '/images/up-arrow-1.png' %}" alt="">
+            
+            </button>
+
+            <button id="ethics-btn">
+                <p> Ethics and Professional Conduct Trainings </p>
+                <img id="ethics-down-arrow" src="{% static '/images/down-arrow-1.png' %}" alt="">
+                <img id="ethics-up-arrow" src="{% static '/images/up-arrow-1.png' %}" alt="">
+            
+            </button>
+        </div>
+    </header>
+
+    <div id="category-contents">
+
+        <div id="department-category-contents">
+            <a href="">Human Resource and Leadership</a>
+            <a href="">Audit Bureau</a>
+            <a href="">IT Support</a>
+            <a href="">Software Development</a>
+            <a href="">Finance and Secretary</a>
+            <a href="">Record Office</a>
+    
+        </div>
+    
+        <div id="general-category-contents">
+            <a href="">Conflict Handling</a>
+            <a href="">Resource Management</a>
+            <a href="">Punctuality and Office Manner</a>
+            <a href="">Customer Handling</a>
+            <a href="">Effective Communication</a>
+            <a href="">Leadership</a>
+            <a href="">Self Knowledge</a>
+    
+    
+        </div>
+    
+        <div id="coaches-category-contents">
+            <a href="">Abebe -</a>
+            <a href="">Samson Gulma</a>
+            <a href="">Tewodros -</a>
+    
+        </div>
+    
+        <div id="tech-category-contents">
+            <a href="">CyberSecurity</a>
+            <a href="">Scam Handling</a>
+            <a href="">Computer Performance Utilization</a>
+    
+        </div>
+    
+        <div id="strategic-category-contents">
+            <a href="">Strategic Planning</a>
+            <a href="">Project Management</a>
+    
+        </div>
+    
+        <div id="ethics-category-contents">
+            <a href="">Dressing Code</a>
+            <a href="">Partnet Approach</a>
+            <a href="">Usage of Time</a>
+    
+        </div>
+
+    </div>
+    
+    <div id="welcome-back-text">
+        <p id="welcome">Welcome back, </p>
+        <p id="welcome-name"> Abebe</p>
+    </div>
+
+
+    <div id="content">
+        
+        
+        <div>
+            <img src="" alt="">
+        </div>
+            
+        <p id="mof-tmsystem"> Minister of Finance, Ethiopia <br> Training Management System </p>
+
+        <div>
+            <img id="online-training-banner-pic" src="{% static '/images/banner-image.jpg' %}" alt="">
+        </div>
+
+
+        <p id="recommended-for-you">Recommended MoF Training For You</p>
+
+        <div id="mandatory-training-cards">
+            {% for items in allmanadatorycontent %}
+
+            <img src="{{ allmanadatorycontent.image.url }}" alt="">
+            <div>
+                <h4>{{ items.title }}</h4>
+                <h5>From {{ items.department }} Department</h5>
+                <p>{{ items.description }}</p>
+                <p>Video link: {{ items.video }}</p>
+                <p>Document link: {{ items.document }}</p>
+                <p>It is {{ items.estimated_time }} long studying</p>
+                <h5>Last Modified Date: {{ items.date }}</h5>
+            </div>
+            {% empty %}
+            <li class="no-data">No Training available For You.</li>
+
+                {% endfor %}
+        </div>
+
+        <p id="scale-up-text">Scale up your skill!</p>
+
+        <div class="trainingCards">
+
+            <div id="top-row-training-cards">
+
+                {% for items in allcontent %}
+                    <div id="card-n">
+                        <div>
+                            <img src="{{ items.image.url }}" alt="">
+                        </div>
+                        <div id="top-row-inner-contents">
+                            <h4>{{ items.title }}</h4>
+                            <h5>From {{ items.department }} Department</h5>
+                            <p>{{ items.description }}</p>
+                            <p>Video link: {{ items.video }}</p>
+                            <p>Document link: {{ items.document }}</p>
+                            <p>It is {{ items.estimated_time }} long studying</p>
+                            <h5>Last Modified Date: {{ items.date }}</h5>
+                        </div>
+                    </div>
+                    
+
+                    {% empty %}
+                    <li class="no-data">No Training available For You.</li>
+
+                {% endfor %}
+
+                
+            </div>
+            
+
+        </div>
+    </div>
+
+    <div id="footer">
+        
+
+            <div id="description">
+                
+                <p>MoF Ethiopia</p>
+                <a href="">About MoF Ethiopia</a>
+                <a href="">About MoF-TMS</a>
+                <a href="">IT Support</a>
+                <a href="">Help</a>
+            </div>
+
+       
+
+      <div id="training-types">
+        
+            <p>Types of Trainings</p>
+            <a href="">General Trainigs</a>
+            <a href="">Technology and Systems Trainings</a>
+            <a href="">Strategic Planning Trainings</a>
+            <a href="">Ethics and Professional Conduct Trainings</a>
+            <a href="">other</a>
+         
+        </div>
+
+        <div id="top-coaches">
+            
+                <p>Top Coaches</p>
+                <a href="">Abebe -</a>
+                <a href="">Tewodros -</a>
+                <a href="">Somebody </a>
+                <a href="">SomeOne Else</a>
+            
+        </div>
+
+
+        <div id="others">
+            
+                <p>Your Thoughts?</p>
+                <a href="">Any Comments?</a>
+                <a href="">Report!</a>
+            
+        </div>
+
+        {% load static %}
+            <img id="MoF-logo-footer" src="{% static '/images/MoF-logo.jpg' %}" alt="">
+            <img id="TMS-logo-footer" src="{% static '/images/TMS-v1.svg' %}" alt="">
+
+
+    </div>
+
+    <footer>
+        <p>copyright </p>
+        <p> &copy;</p>
+        <p> iRON GLEN </p>
+        <p>Allright reserved. 2024</p>
+    </footer>
+</body>
+</html>

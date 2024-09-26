@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'landing.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    {% load static %}
+    <script src="{% static 'landing.js' %}" defer></script>
+    <title>MoF-TMS</title>
+</head>
+<body>
+
+    <div id="top-navigation-bar">
+        {% load static %}
+
+        <img id="mof-logo-left" src="{% static '/images/MoF-logo.jpg' %}" alt="">
+
+        <li id="nav-toggle-center">
+            <a id="moftms" href="#tms-intro">MoF-TMS</a>
+            <a id="aboutmof" href="#mof-intro">MoF Ethiopia</a>
+            <a id="ifmis" href="#ifmis-intro">IFMIS</a>
+            <a id="support" href="#get-support">Get Support</a>
+        </li>
+
+        <li id="nav-toggle-right">
+            <a href="{% url 'traineeregister' %}">Register</a>
+            <a href="{% url 'traineelogin' %}">Login</a>
+            <a href="">|</a>
+            <a href="">Help</a>
+        </li>
+    </div>
+
+    <div id="tms-intro">
+        <div id="intro-text-paragraph">
+            <p id="mof-text">
+                Minister of Finance Ethiopia
+            </p>
+            <p id="tms-text">
+                Training Management System
+            </p>
+
+            <p id="system-description">
+                Minister of Finance Ethiopia Training Management System, A unique platform that creates a suitable online training environment for trainees. And That makes it easy for the coaches to deliver a professional trainings through out the posts on the platform.
+            </p>
+        </div>
+        
+        
+        <img id="trainingImg" src="{% static '/images/training-img.png' %}" alt="">
+
+    </div>
+
+    <div id="mof-intro">
+
+        <img id="mof-logo-body" src="{% static '/images/MoF-logo.jpg' %}" alt="">
+
+        <div id="mof-intro-paragraph">
+            <p id="mof-text-2"></p>
+                Minister of Finance Ethiopia
+            </p>
+
+            <p id="mof-description">
+                Ministry of Finance is one of the key macro institutions with mandates focusing on fiscal policy, public finance and
+                external economic. <br> The Minister Office have 5(five) program and projects under its cover which are Climate Resilient Green Economy (CRGE) Facility, Public Private Partnership (PPP), Integrated Financial Management
+                Information System (IFMIS), Financial Transparency & Accountablity(FTA) and Channel One Program Coordinating Directorate.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div id="ifmis-intro">
+        
+        <div id="ifmis-intro-paragraph">
+            <p id="ifmis-text"></p>
+            IFMIS - Integrated Financial
+            Management Infromation System
+            </p>
+    
+            <p id="ifmis-description">
+                The Integrated Financial Management Information System (IFMIS) is an integrated Public Financial Management system being
+                implemented by Federal Government of Ethiopia (FGE) through the Ministry of Finance Ethiopia to improve Public Financial
+                Management System and Property Administration; enhance greater accountability, timely financial and property information
+                and transparency across Federal Ministries, Agencies, Regions, City administration, Zones and Woredas.
+            </p>
+        </div>
+    
+            <img id="oncloud" src="{% static '/images/programmersatoncloud.svg' %}" alt="">
+    </div>
+
+
+    <div id="get-support">
+        <p>
+            Get Support
+        </p>
+        <p>
+            + 251-111-552-015
+        </p>
+    </div>
+
+<footer>
+    <p>copyright </p>
+    <p> &copy;</p>
+    <p> iRON GLEN </p>
+    <p>Allright reserved. 2024</p>
+</footer>
+
+</body>
+</html>
